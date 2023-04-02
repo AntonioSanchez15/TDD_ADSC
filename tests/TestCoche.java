@@ -3,31 +3,31 @@ import org.junit.jupiter.api.Test;
 
 public class TestCoche {
     @Test
-    public void testAlCrearCocheSuVelocidadEsCero(){
+    public void testAlCrearCocheSuVelocidadEsCero_AntonioDavid(){
         Coche nuevoCoche = new Coche();
         Assertions.assertEquals(0, nuevoCoche.velocidad);
     }
 
     @Test
-    public void testAlAcelerarUnCocheSuVelocidadAumenta(){
+    public void testAlAcelerarUnCocheSuVelocidadAumenta_AntonioDavid(){
         Coche nuevoCoche = new Coche();
-        nuevoCoche.acelerar(30);
+        nuevoCoche.acelerar_AntonioDavid(30);
         Assertions.assertEquals(30, nuevoCoche.velocidad);
     }
 
     @Test
-    public void testAlDecelerarUnCocheSuVelocidadDisminuye(){
+    public void testAlDecelerarUnCocheSuVelocidadDisminuye_AntonioDavid(){
         Coche nuevoCoche = new Coche();
         nuevoCoche.velocidad = 50;
-        nuevoCoche.decelerar(20);
+        nuevoCoche.decelerar_AntonioDavid(20);
         Assertions.assertEquals(30, nuevoCoche.velocidad);
     }
 
     @Test
-    public void testAlDecelerarUnCocheSuVelocidadNoPuedeSerMenorQueCero(){
+    public void testAlDecelerarUnCocheSuVelocidadNoPuedeSerMenorQueCero_AntonioDavid(){
         Coche nuevoCoche = new Coche();
         nuevoCoche.velocidad = 50;
-        nuevoCoche.decelerar(80);
+        nuevoCoche.decelerar_AntonioDavid(80);
         Assertions.assertEquals(0, nuevoCoche.velocidad);
     }
 }
